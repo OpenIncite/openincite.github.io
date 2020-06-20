@@ -19,7 +19,7 @@ params:
   description: 
   navbarlogo:
   # Logo (from static/images/logos/___)
-    image: logos/openincite_dark_orange.svg
+    image: logos/openincite_dark_orange_xl.svg
     link: /
   font:
     name: "Open Sans"
@@ -122,7 +122,7 @@ params:
   section5: true
   footer:
     # Logo (from /images/logos/___)
-    logo: openincite_light_orange.svg
+    logo: openincite_light_orange_xl.svg
     # Social Media Title
     socialmediatitle: Follow Us
     # Social media links (GitHub, Twitter, etc.). All are optional.
