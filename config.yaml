@@ -46,8 +46,8 @@ params:
   navbar:
   - title: About
     url: /about
-  - title: Showcase
-    url: /
+  - title: Projects
+    url: /projects
   - title: Events
     url: /events
     # sublinks:
@@ -146,25 +146,25 @@ params:
         - text: About Us
           link: /about
         - text: What we do
-          link: /
+          link: /about#what-we-do
         - text: Why Open Source
-          link: /
+          link: /about#why-open-source
         - text: Our roadmap
-          link: /
+          link: /about#roadmap
         
       column2:
         title: "Events"
         links:
         - text: Ongoing Events
-          link: /
-        - text: Previous Events
-          link: /
+          link: /events#ongoing-events
         - text: Upcoming Events
-          link: /
+          link: /events#upcoming-events
+        - text: Previous Events
+          link: /events#previous-events
       column3:
         title: "Blog"
         links:
         - text: Latest news
-          link: /blog/first
+          link: /blog/
         - text: Tech articles
-          link: /blog/second
+          link: /blog/
