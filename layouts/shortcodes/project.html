@@ -1,0 +1,22 @@
+<div class="content-wrapper">
+      <div class="columns">
+        <!-- {{- range $tiles }} -->
+        <div class="column is-one-third">
+          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+                {{ with .Get "title" }}<h4>{{ . }}</h4>{{ end }}
+            </div>
+            <div class="card-icon">
+                {{ with .Get "icon" }}<img src="{{ . }}">{{ end }}
+            </div>
+            <div class="card-text">
+                {{ with .Get "text" }}<p>{{ . }}</p>{{ end }}
+            </div>
+            <div class="card-action">
+                {{ with .Get "url" }}<a href="{{ . }}"{{ end }} class="button btn-align-md accent-btn raised">{{ with .Get "buttonText"}}{{ . }}</a> {{ end}}
+            </div>
+          </div>
+        </div>
+        <!-- {{- end }} -->
+      </div>
+    </div>
