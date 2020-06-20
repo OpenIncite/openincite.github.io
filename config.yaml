@@ -19,7 +19,7 @@ params:
   description: 
   navbarlogo:
   # Logo (from static/images/logos/___)
-    image: logos/fresh.svg
+    image: logos/openincite_logo.svg
     link: /
   font:
     name: "Open Sans"
