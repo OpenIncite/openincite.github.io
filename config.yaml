@@ -1,4 +1,4 @@
-baseURL: https://openincite.github.io/
+baseURL: https://deploy-preview-1--openincite.netlify.app/
 languageCode: en-us
 title: OpenIncite
 theme: hugo-fresh
