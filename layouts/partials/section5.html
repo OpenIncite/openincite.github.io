@@ -2,25 +2,25 @@
   <div class="container">
     <div class="title-wrapper has-text-centered">
       <h2 class="title is-2 is-spaced">Subscribe to our newsletter </h2>
-      <h3 class="subtitle is-5 is-muted">We publish a bi-weekly newsletter containing interesting articles and projects we've come across</h3>
+      <h3 class="subtitle is-5 is-muted">We publish a bi-weekly newsletter containing interesting articles and projects
+        we've come across</h3>
       <div class="divider is-centered"></div>
     </div>
 
     <div class="content-wrapper">
-      <div class="columns">
-        <div class="column is-6 is-offset-3">
-          <form>
-            <div class="columns">
-              <div class="column is-four-fifths">
-                <input class="input is-large is-rounded" type="email" placeholder="torvalds@linux-foundation.org">
-              </div>
-              <div class="column">
-                <button class="button cta is-large primary-btn raised is-clear is-rounded">Subscribe</button>
-              </div>
-            </div>
-          </form>
+      <form name="newsletter" method="POST" data-netlify="true">
+        <div class="columns is-centered">
+          <div class="column is-6">
+            <input class="input is-large is-rounded" type="email" placeholder="torvalds@linux-foundation.org">
+          </div>
         </div>
-      </div>
+        <div class="columns is-centered">
+          <div class="column is-half is-offset-4">
+            <button class="button cta is-large primary-btn raised is-clear is-rounded">Subscribe</button>
+          </div>
+        </div>
+      </form>
     </div>
+  </div>
   </div>
 </section>
