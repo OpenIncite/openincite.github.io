@@ -7,23 +7,53 @@ comments: false
 projects:
  tiles:
  - title: MIS Bot
-   icon: misbot.png
-   text: Telegram bot for SJCEM
-   url: https://github.com/ArionMiles/MIS-Bot
-   buttonText: GitHub
+   category: python
+   projectImage: misbot.png
+   description: Telegram bot to pull attendance from SJCET website, plus more features like bunk calculator, test reports, etc.
+   sourceURL: https://github.com/ArionMiles/MIS-Bot
+   authorName: Kanishk
+   authorURL: https://arionmiles.me
+   tags:
+    - Python
+    - Telegram
  - title: MIS Bot
-   icon: misbot.png
-   text: Telegram bot for SJCEM
-   url: https://github.com/ArionMiles/MIS-Bot
-   buttonText: GitHub
+   category: javascript
+   projectImage: misbot.png
+   description: Telegram bot to pull attendance from SJCET website, plus more features like bunk calculator, test reports, etc.
+   sourceURL: https://github.com/ArionMiles/MIS-Bot
+   authorName: Kanishk
+   authorURL: https://arionmiles.me
+   tags:
+    - Python
+    - Telegram
  - title: MIS Bot
-   icon: misbot.png
-   text: Telegram bot for SJCEM
-   url: https://github.com/ArionMiles/MIS-Bot
-   buttonText: GitHub
+   category: go
+   projectImage: misbot.png
+   description: Telegram bot to pull attendance from SJCET website, plus more features like bunk calculator, test reports, etc.
+   sourceURL: https://github.com/ArionMiles/MIS-Bot
+   authorName: Kanishk
+   authorURL: https://arionmiles.me
+   tags:
+    - Python
+    - Telegram
  - title: MIS Bot
-   icon: misbot.png
-   text: Telegram bot for SJCEM
-   url: https://github.com/ArionMiles/MIS-Bot
-   buttonText: GitHub
+   category: nodejs
+   projectImage: misbot.png
+   description: Telegram bot to pull attendance from SJCET website, plus more features like bunk calculator, test reports, etc.
+   sourceURL: https://github.com/ArionMiles/MIS-Bot
+   authorName: Kanishk
+   authorURL: https://arionmiles.me
+   tags:
+    - Python
+    - Telegram
+ - title: MIS Bot
+   category: php
+   projectImage: misbot.png
+   description: Telegram bot to pull attendance from SJCET website, plus more features like bunk calculator, test reports, etc.
+   sourceURL: https://github.com/ArionMiles/MIS-Bot
+   authorName: Kanishk
+   authorURL: https://arionmiles.me
+   tags:
+    - Python
+    - Telegram
 ---
