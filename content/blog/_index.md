@@ -1,6 +1,7 @@
 ---
 title: "Blog"
 draft: false
+type: blog
 description: "OpenIncite's very own blog!"
 comments: false
 ---
