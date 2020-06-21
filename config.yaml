@@ -34,7 +34,7 @@ params:
     # Where the main hero button links to
     buttonlink: "/about"
     # Hero image (from static/images/___)
-    image: illustrations/worker.svg
+    image: illustrations/shared_workspace.svg
     # Footer logos (from static/images/logos/clients/___.svg)
     # clientlogos:
     # - systek

@@ -34,11 +34,13 @@
                 </div>
               </div>
             </div>
+            {{ if .projectImage }}
             <div class="card-image">
               <figure class="image">
                 <img src="{{ printf "/images/projects/%s" .projectImage | relURL }}" alt="Project Image">
               </figure>
             </div>
+            {{ end }}
             <div class="card-content">
               <div class="content">
                 {{ .description }}

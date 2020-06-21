@@ -18,7 +18,7 @@ projects:
     - Telegram
  - title: MIS Bot
    category: javascript
-   projectImage: misbot.png
+  #  projectImage: misbot.png
    description: Telegram bot to pull attendance from SJCET website, plus more features like bunk calculator, test reports, etc.
    sourceURL: https://github.com/ArionMiles/MIS-Bot
    authorName: Kanishk
