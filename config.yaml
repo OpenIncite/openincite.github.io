@@ -59,11 +59,11 @@ params:
     #   url: /
   - title: Blog
     url: /blog  
-  - title: Log in
-    url: /
-  - title: Sign up
-    url: /
-    button: true
+  # - title: Log in
+  #   url: /
+  # - title: Sign up
+  #   url: /
+  #   button: true
   # section1:
   #   title: Great power comes
   #   subtitle: with great responsibility
