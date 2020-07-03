@@ -20,14 +20,12 @@
                     <div class="media-content">
                     
                         <div class="content">
-                            <h3 class="title is-4 is-primary"><a href="{{.Permalink}}">{{.Title}}</h3></a>
+                            <h3 class="title is-4"><a href="{{.Permalink}}">{{.Title}}</h3></a>
                             <h5 class="subtitle is-6 is-muted">{{.Params.description}}</h5>
                             
-                                <strong>{{.Params.author}}</strong> <small> on {{.Date.Format "January 2, 2006"}}</small>
-                            
+                            <a href='{{ .Params.authorURL }}'><strong class="author">{{.Params.author}}</strong></a> <small> on {{.Date.Format "January 2, 2006"}}</small>
                         </div>
-                        <!-- <h5 class="is-6"><a href="{{.Permalink}}">Read Now</a></h5> -->
-                    
+                                       
                     </div>
                 </div>
         {{ end }}
