@@ -151,6 +151,8 @@ params:
           link: /about#why-open-source
         - text: Our roadmap
           link: /about#roadmap
+        - text: Credits
+          link: /credits
         
       column2:
         title: "Events"

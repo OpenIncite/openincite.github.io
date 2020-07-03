@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+{{- $tools := .Params.tools }}
+{{- $tiles    := index $tools "tiles" }}
+
+{{ partial "navbar.html" . }}
+{{ partial "navbar-clone.html" . }}
+
+
+
+<section class="section section-feature-grey is-medium">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">{{ .Params.title }}</h2>
+      <h3 class="subtitle is-5 is-muted">{{ .Params.description }}</h3>
+      <div class="divider is-centered"></div>
+    </div>
+    
+    <div class="content-wrapper">
+      <div class="columns is-multiline">
+        <div class="container">
+          {{- range $tiles }}
+            <div class="columns is-vcentered">
+                <div class="column is-one-fifth">
+                  <figure class="image">
+                    <a href="{{ .link }}" target="_blank"><img src="{{ printf "/images/credits/%s" .image | relURL }}" alt="Tool Logo" width="256" height=auto></a>
+                  </figure>
+                </div>  
+                <div class="column">{{ .description}}</div>
+            </div>
+          {{- end }}
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+{{ partial "footer.html" . }}
+{{ end }}
