@@ -3,7 +3,7 @@ title: "Hugo shortcodes"
 date: 2020-06-22T01:45:00+05:30
 description: Here is a demo of all shortcodes available in Hugo.
 author: "Jane Doe"
-draft: false
+draft: true
 comments: false
 ---
 

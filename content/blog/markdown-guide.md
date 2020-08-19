@@ -3,7 +3,7 @@ title: "Markdown Syntax Guide"
 date: 2020-06-22T01:40:00+05:30
 description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
 author: "John Doe"
-draft: false
+draft: true
 comments: false
 ---
 
