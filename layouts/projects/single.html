@@ -1,0 +1,63 @@
+{{ define "main" }}
+
+{{- $projects := .Params.projects }}
+{{- $tiles    := index $projects "tiles" }}
+
+{{ partial "navbar.html" . }}
+{{ partial "navbar-clone.html" . }}
+
+
+
+<section class="section section-feature-grey is-medium">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">{{ .Params.title }}</h2>
+      <h3 class="subtitle is-5 is-muted">{{ .Params.description }}</h3>
+      <div class="divider is-centered"></div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="columns is-multiline">
+        {{- range $tiles }}
+        <div class="column is-one-third">
+          <div class="card">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="{{ printf "/images/categories/%s.svg" .category | relURL }}" alt="Category">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4"><a href="{{ .sourceURL }}" target="_blank">{{ .title }}</a></p>
+                  <p class="subtitle is-6">By <a href="{{ .authorURL }}" target="_blank">{{ .authorName }}</a></p>
+                </div>
+              </div>
+            </div>
+            {{ if .projectImage }}
+            <div class="card-image">
+              <figure class="image">
+                <img src="{{ printf "/images/projects/%s" .projectImage | relURL }}" alt="Project Image">
+              </figure>
+            </div>
+            {{ end }}
+            <div class="card-content">
+              <div class="content">
+                {{ .description }}
+              </div>
+              <footer class="card-footer">
+                {{- range .tags }}
+                <a href="#" class="card-footer-item">{{ . }}</a>
+                {{- end}}
+                <!-- <a href="#" class="card-footer-item"></a> -->
+              </footer>
+            </div>
+          </div>
+        </div>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ partial "footer.html" . }}
+{{ end }}

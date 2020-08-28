@@ -1,0 +1,172 @@
+baseURL: https://deploy-preview-1--openincite.netlify.app/
+languageCode: en-us
+title: OpenIncite
+theme: hugo-fresh
+googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
+# Disables warnings
+disableKinds:
+- taxonomy
+- taxonomyTerm
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
+
+params:
+  # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
+  openGraph: true
+  # Used as meta data; describe your site to make Google Bots happy 
+  description: 
+  navbarlogo:
+  # Logo (from static/images/logos/___)
+    image: logos/openincite_dark_orange_xl.svg
+    link: /
+  font:
+    name: "Open Sans"
+    sizes: [400,600]
+  hero:
+    # Main hero title
+    title: Learn. Collab. Make.
+    # Hero subtitle (optional)
+    subtitle: Developing and promoting open-source software to learn, collaborate and enable.
+    # Button text
+    buttontext: More info
+    # Where the main hero button links to
+    buttonlink: "/about"
+    # Hero image (from static/images/___)
+    image: illustrations/shared_workspace.svg
+    # Footer logos (from static/images/logos/clients/___.svg)
+    # clientlogos:
+    # - systek
+    # - tribe
+    # - kromo
+    # - infinite
+    # - gutwork
+  # Customizable navbar. For a dropdown, add a "sublinks" list.
+  navbar:
+  - title: About
+    url: /about
+  - title: Projects
+    url: /projects
+  - title: Events
+    url: /events
+    # sublinks:
+    # - title: Dropdown item
+    #   url: /
+    # - title: Dropdown item
+    #   url: /
+    # - title: Dropdown item
+    #   url: /
+  - title: Blog
+    url: /blog  
+  # - title: Log in
+  #   url: /
+  # - title: Sign up
+  #   url: /
+  #   button: true
+  # section1:
+  #   title: Great power comes
+  #   subtitle: with great responsibility
+  #   tiles:
+  #   - title: App builder
+  #     icon: mouse-globe
+  #     text: This is some explanatory text that is on two rows
+  #     url: /
+  #     buttonText: Free trial
+  #   - title: Cloud integration
+  #     icon: laptop-cloud
+  #     text: This is some explanatory text that is on two rows
+  #     url: /
+  #     buttonText: Get started
+  #   - title: Add-ons & plugins
+  #     icon: plug-cloud
+  #     text: This is some explanatory text that is on two rows
+  #     url: /
+  #     buttonText: Get started
+  section2:
+    title: Wanna get started but don't know how?
+    subtitle: We've got you covered
+    features:
+    - title: Check out our blog!
+      text: We've written some [articles](/blog) on what we do and why we do it. Feel free to be inspired!
+      # Icon (from /images/illustrations/icons/___.svg)
+      icon: laptop-globe
+    - title: Join one of our events!
+      text: We conduct regular events such as seminars, webinars, hands-on project development and online contests. Checkout our [events](/events) page for more information.
+      icon: doc-sync
+    - title: Check out our work on GitHub!
+      text: We love open source here, and what's loving open source without showing it off on GitHub? OpenIncite has its very own [organization](https://github.com/openincite).
+      icon: mobile-feed
+  # section3:
+  #   title: One platform
+  #   subtitle: To rule them all
+  #   image: illustrations/mockups/app-mockup.png
+  #   buttonText: Get started
+  #   buttonLink: "#"
+  # section4:
+  #   title: Our Clients love us!
+  #   subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
+  #   clients:
+  #   - name: Irma Walters
+  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+  #     job: Accountant
+  #     img: 1
+  #   - name: John Bradley
+  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+  #     job: Financial Analyst
+  #     img: 2
+  #   - name: Gary Blackman
+  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+  #     job: HR Manager
+  #     img: 3
+  section5: true
+  footer:
+    # Logo (from /images/logos/___)
+    logo: openincite_light_orange_xl.svg
+    # Social Media Title
+    socialmediatitle: Follow Us
+    # Social media links (GitHub, Twitter, etc.). All are optional.
+    socialmedia:
+    - link: https://github.com/openincite
+      # Icons are from Font Awesome
+      icon: github
+    - link: https://instagram.com/
+      icon: instagram
+    - link: https://linkedin.com/
+      icon: linkedin
+    - link: https://twitter.com/
+      icon: twitter
+    # - link: https://bitbucket.org/#
+    #   icon: bitbucket
+    bulmalogo: true
+    quicklinks:
+      column1:
+        title: "About"
+        links:
+        - text: About Us
+          link: /about
+        - text: What we do
+          link: /about#what-we-do
+        - text: Why Open Source
+          link: /about#why-open-source
+        - text: Our roadmap
+          link: /about#roadmap
+        - text: Credits
+          link: /credits
+        
+      column2:
+        title: "Events"
+        links:
+        - text: Ongoing Events
+          link: /events#ongoing-events
+        - text: Upcoming Events
+          link: /events#upcoming-events
+        - text: Previous Events
+          link: /events#previous-events
+      column3:
+        title: "Blog"
+        links:
+        - text: Latest news
+          link: /blog/
+        - text: Tech articles
+          link: /blog/

@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+{{ partial "navbar.html" . }}
+{{ partial "navbar-clone.html" . }}
+
+
+
+<section class="section section-feature-grey is-medium">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">{{ .Params.title }}</h2>
+      <h3 class="subtitle is-5 is-muted">{{ .Params.description }}</h3>
+      <div class="divider is-centered"></div>
+    </div>
+
+    <div class="content-wrapper">
+        
+        {{ range .Pages }}
+            <div class="media">
+                    <div class="media-content">
+                    
+                        <div class="content">
+                            <h3 class="title is-4"><a href="{{.Permalink}}">{{.Title}}</h3></a>
+                            <h5 class="subtitle is-6 is-muted">{{.Params.description}}</h5>
+                            
+                            <a href='{{ .Params.authorURL }}'><strong class="author">{{.Params.author}}</strong></a> <small> on {{.Date.Format "January 2, 2006"}}</small>
+                        </div>
+                                       
+                    </div>
+                </div>
+        {{ end }}
+        
+    </div>
+  </div>
+</section>
+{{ partial "footer.html" . }}
+{{ end }}
